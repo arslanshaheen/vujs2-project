@@ -4,7 +4,7 @@ import Router from "vue-router";
 
 Vue.use(Router);
 import HomeCom from "./components/HomeCom";
-import LoginCom from "./components/LoginCom";
+import CreateUser from "./components/CreateUser";
 import GetApi from "./components/GetApi";
 import CardsData from "./components/CardsData";
 const routes = [
@@ -24,9 +24,9 @@ const routes = [
     component: GetApi,
   },
   {
-    path: "/login",
-    name: "Login",
-    component: LoginCom,
+    path: "/creater-user",
+    name: "CreateUser",
+    component: CreateUser,
   },
 ];
 const router = new Router({

@@ -1,24 +1,32 @@
 <template>
   <div id="app">
-    <HomeCom />
-    <div class="cardata"><CardsData /></div>
-
-    <!-- <GetApi /> -->
-    <!-- <router-view></router-view> -->
+    <nav>
+      <ul>
+        <li><HelloWorld /></li>
+        <!-- <li><CreateUser /></li> -->
+        <!-- <li><router-view to="/creater-user"></router-view></li> -->
+      </ul>
+    </nav>
+    <!-- <HomeCom /> -->
+    <!-- <div class="cardata"><CardsData /></div> -->
   </div>
 </template>
 
 <script>
-import HomeCom from "./components/HomeCom.vue";
+// import CreateUser from "./components/CreateUser.vue";
 // import GetApi from "./components/GetApi";
-import CardsData from "./components/CardsData";
+// import CardsData from "./components/CardsData";
+// import HomeCom from "./components/HomeCom.vue";
+import HelloWorld from "./components/HelloWorld.vue";
 
 export default {
   name: "App",
   components: {
-    HomeCom,
-    // GetApi,
-    CardsData,
+    // CreateUser,
+    // // GetApi,
+    // CardsData,
+    // HomeCom,
+    HelloWorld,
   },
 };
 </script>
